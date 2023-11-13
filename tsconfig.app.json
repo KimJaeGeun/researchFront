@@ -1,0 +1,14 @@
+{
+    "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"],
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            // TODO: 이후 간략히 쓸수 있는 방안 고안
+            // root url
+            "@": ["/src/*"],
+            // scss
+            "scss": ["/src/assets/scss/*"]
+        },
+        "lib": ["ESNext", "DOM"]
+    }
+}
